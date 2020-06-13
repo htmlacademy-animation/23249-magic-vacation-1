@@ -1605,7 +1605,7 @@ img {
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.27;
-  animation: fadeIn 0.4s linear; }
+  animation: fadeIn 0.5s linear; }
   @media (min-width: 2000px) {
     .intro__message {
       width: 509px;
@@ -2912,9 +2912,9 @@ img {
       .slider .swiper-wrapper {
         min-height: calc(var(--vh, 1vh) * 100); } }
   .slider .swiper-slide-active .slider__item-text {
-    animation: textShift 0.5s linear 0.1s; }
+    animation: textShift 0.5s linear; }
   .slider .swiper-slide-next .slider__item-text {
-    animation: textShift 0.6s linear 0.2s; }
+    animation: textShift 0.5s linear; }
 
 .slider__item {
   display: flex;

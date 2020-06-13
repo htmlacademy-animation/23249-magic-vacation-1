@@ -11,6 +11,18 @@
       min-height: calc(var(--vh, 1vh) * 100);
     }
   }
+
+  .swiper-slide-active {
+    .slider__item-text {
+      animation: textShift 0.5s linear 0.1s;
+    }
+  }
+
+  .swiper-slide-next {
+    .slider__item-text {
+      animation: textShift 0.7s linear 0.3s;
+    }
+  }
 }
 
 .slider__item {
@@ -274,5 +286,15 @@
       height: 0.4rem;
       background-color: $c-light;
     }
+  }
+}
+
+@keyframes textShift {
+  from {
+    transform: translateX(-40px);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }

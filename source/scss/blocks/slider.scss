@@ -12,15 +12,10 @@
     }
   }
 
-  .swiper-slide-active {
-    .slider__item-text {
-      animation: textShift 0.5s linear;
-    }
-  }
-
+  .swiper-slide-active,
   .swiper-slide-next {
     .slider__item-text {
-      animation: textShift 0.5s linear;
+      animation: shiftRight 0.5s linear;
     }
   }
 }
@@ -289,7 +284,7 @@
   }
 }
 
-@keyframes textShift {
+@keyframes shiftRight {
   from {
     transform: translateX(-40px);
   }

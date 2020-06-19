@@ -93,7 +93,7 @@
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.27;
-  animation: fadeIn 0.5s linear;
+  animation: fadeIn 0.8s ease-in, shiftUp 0.5s linear;
 
   @media (min-width: $stop-scaling) {
     width: 509px;
@@ -164,14 +164,22 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes shiftUp {
   from {
-    opacity: 0;
     transform: translateY(20px);
   }
 
   to {
-    opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

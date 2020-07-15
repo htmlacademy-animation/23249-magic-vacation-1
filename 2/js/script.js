@@ -10117,7 +10117,7 @@ module.exports = code;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (() => {
-  let pageHeader = document.querySelector(`.js-header`);
+  const pageHeader = document.querySelector(`.js-header`);
 
   window.addEventListener(`load`, () => {
     pageHeader.classList.remove(`page-header--loading`);

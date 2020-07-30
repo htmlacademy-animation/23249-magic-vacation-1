@@ -49,7 +49,7 @@
   padding: 1rem 0;
   width: 10rem;
   color: $c-light;
-  transition: left 0.5s cubic-bezier(.87,.55,.71,.92), opacity 0.35s linear;
+  transition: left 0.5s $bezier-85-persent, opacity 0.35s linear;
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -148,7 +148,7 @@
   position: relative;
   right: 0;
   opacity: 1;
-  transition: right 0.5s cubic-bezier(.87,.55,.71,.92), opacity 0.35s linear;
+  transition: right 0.5s $bezier-85-persent, opacity 0.35s linear;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     position: fixed;

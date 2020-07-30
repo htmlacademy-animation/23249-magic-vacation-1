@@ -271,7 +271,6 @@
       background-color: $c-light;
       display: block;
       left: 0;
-      transition: width 0.35s linear;
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -288,8 +287,8 @@
 
     &.active {
       &::after {
+        animation: growWidth 0.45s ease-in-out;
         width: 100%;
-        display: block;
       }
     }
 
@@ -322,6 +321,16 @@
 
   @media (max-width: $mobile) and (orientation: landscape) {
     margin-left: 0;
+    width: 100%;
+  }
+}
+
+@keyframes growWidth {
+  from {
+    width: 0;
+  }
+
+  to {
     width: 100%;
   }
 }

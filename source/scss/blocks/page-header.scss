@@ -298,10 +298,9 @@
       outline: none;
 
       &::after {
-        opacity: 1;
         background-color: $c-purple;
         width: 100%;
-        display: block;
+        animation: growWidth 0.45s ease-in-out;
       }
     }
   }

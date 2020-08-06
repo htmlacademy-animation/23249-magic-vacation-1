@@ -38,16 +38,6 @@
   }
 }
 
-@keyframes growWidth {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
 @keyframes shiftRight {
   from {
     transform: translateX(-40px);

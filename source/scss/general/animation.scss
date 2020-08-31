@@ -1,0 +1,59 @@
+@keyframes changeFieldWidth {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: calc(100% - 21rem);
+  }
+}
+
+@keyframes circleAppear {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  40% {
+    opacity: 0.8;
+    width: 60%;
+    height: 60%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shiftRight {
+  from {
+    transform: translateX(-40px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shiftUp {
+  from {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

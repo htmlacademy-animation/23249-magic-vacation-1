@@ -20,6 +20,23 @@
     .form__field {
       animation: changeFieldWidth 0.6s ease-in;
     }
+
+    @for $i from 1 through 4 {
+      .rules__item:nth-child(#{$i})::before {
+        animation: rulesBullet 0.5s * $i ease-in;
+      }
+
+      .rules__item:nth-child(#{$i}) p {
+        animation: rulesText 0.5s * $i ease-in;
+      }
+    }
+
+    .rules__link {
+      &::before {
+        width: 0;
+        border: 0;
+      }
+    }
   }
 
   @media (max-width: $tablet) and (orientation: portrait) {

@@ -10128,6 +10128,10 @@ __webpack_require__.r(__webpack_exports__);
 
   lastRulesItem.addEventListener(`animationend`, () => {
     rulesLink.classList.add(`rules__link--animated`);
+
+    setTimeout(() => {
+      rulesLink.classList.remove(`rules__link--animated`);
+    }, 1000);
   });
 });
 

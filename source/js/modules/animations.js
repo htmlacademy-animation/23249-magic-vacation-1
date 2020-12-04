@@ -15,4 +15,10 @@ export default () => {
       rulesLink.classList.remove(`rules__link--animated`);
     }, 1000);
   });
+
+  const flamingoImage = document.querySelector(`.result__flamingo`);
+
+  flamingoImage.onanimationend = () => {
+    flamingoImage.classList.add(`rotate`);
+  };
 };

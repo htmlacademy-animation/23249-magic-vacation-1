@@ -1641,8 +1641,7 @@ img {
   position: fixed;
   left: 0;
   z-index: 100;
-  opacity: 0.5;
-  display: none; }
+  opacity: 0.5; }
 
 .game__button {
   margin: 0 30px 30px;

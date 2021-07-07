@@ -1,0 +1,25 @@
+.accent-word {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.accent-word__letter {
+  display: inline-block;
+  animation-play-state: paused;
+  animation-name: accentLetterSlideIn;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.intro__date--accent,
+.intro__title--accent,
+.slider__item-title--accent,
+.prizes__title--accent,
+.rules__title--accent,
+.game__title--accent {
+  .accent-word__letter {
+    animation-play-state: running;
+  }
+}
+
